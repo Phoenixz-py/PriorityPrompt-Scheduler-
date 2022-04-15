@@ -39,10 +39,7 @@ const Outtime = 'When its';
 
 console.log(chalk.red(inputA) + '\n' + chalk.green(inputB));
 
-//                       Storing Function execution
-//let ExecuteController = prompt(inputD);
-//                                                                                       Storing Intervals Preferences 
- 
+
 let Controller = prompt(chalk.magenta(lorda))
 
 //                                                                                      Design of time inputting
@@ -51,9 +48,7 @@ console.log(inputTime)
 //                                                                                    Storing of time (FN = From Now)
 let TimeDN = prompt(chalk.magenta(lordt))
 
-//                                                                                                    Design
 
-//console.log(chalk.red(inputA) + '\n' + chalk.green(inputB))
 
 //                                                                                   Empty array where 'task' will pe pushed
 
@@ -78,16 +73,32 @@ class Task{
  }
 
 
+
+ class SingleTask{
+     constructor(tocomplete, info, clock){
+
+        this.tocomplete = tocomplete;
+        this.info = info;
+        this.clock = clock;   
+
+        }
+    printa(){
+        console.log(`${this.tocomplete}\n${this.info}\n${this.clock}`)
+    }
+ }
+
+
 if(Controller == 1){
 
 
-for(let i = 0; i < 1; i++){
+for(let i = 0; i < 2; i++){
 
     const a = prompt(K);
     const b = prompt(Kb);
     const c = prompt(Kc);
     let inst = new Task(a, b, c) 
-Tasks.push(inst)
+    Tasks.push(inst)
+    var sangeet = inst
 }
 }
 
@@ -97,7 +108,9 @@ else if(Controller == 2){
     const j = prompt(K);
     const i = prompt(Kb);
     const l = prompt(Kc);
-    Tasks.push(j, i, l)
+    let instav = new SingleTask(K, Kb, Kc)
+    Tasks.push(instav)
+    var jill = instav
     
 }
 
@@ -109,12 +122,18 @@ else
 
 let Alert = () => {
 
-    // console.log(Tasks)
-    
-    // console.log(Tasks)
+//      console.log(Tasks)
+if(Tasks == sangeet){
     Tasks.forEach(task => task.print())
 }
 
+else if(Tasks == jill){
+    Tasks.forEach(task => task.printa())
+}
+else{
+    console.log("Looks lit");
+}
+}
 //                                                                                                          Storing Function execution
 
 let ExecuteController = prompt(inputD);
@@ -150,29 +169,4 @@ const TimingAlert = () => {
 else{
     console.log(chalk.magentaBright(OwO))
 }
-
-// //making counting function
-
-//  let reLife = () => Tasks.forEach(list => {
-//    console.count(list)
-// })
-// do{
-//      let Clean = prompt(cleaner)
-//      if(Clean == 'clean'){
-//         console.clear()
-//      }
-     
-//  }
-//  while(reLife == 4)
-
-
-//                                        this one to not enter 3000 or 5000 again and again
-let autoConvert = () => {
-    //1 sec = 1000ms
-    // 60 sec (1 min) = 60,000ms
-    // 60 min (1hr) = 360,000
-    const testca = prompt(lordt)
-    return console.log(testca * 360000)
-}
-
 
