@@ -1,0 +1,52 @@
+First I imported promptSync to take inputs, I have used the e6 version, Its hard to import it in a common js file you have to edit a json file
+{
+  "name": "tdl",
+  "version": "1.0.0",
+  "description": "Tools for next project TDL",
+  "main": "Start.js",
+  "scripts": {
+    "test": "TStart.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "To Do List with extra features"
+  },
+  "keywords": [
+    "TDLE"
+  ],
+  "author": "Yash Raj",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "promise": "^8.1.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "type": "module"
+}
+type module one
+
+then only u can work smoothly
+I imported chalk npm... for colors
+
+To make the code clean I used constant variables to store string values
+
+Later I took inputs and used those string values
+
+I made two classes with the same method(method overloading 10 days to fix on my own..)
+the error was the object getting printed out in a weird format, very annoying.
+
+I used for loop, to take  inputs(just change i<2) for taking multiple values
+
+I inserted in if-else for the different tasks to remind 
+
+I made a function Alert where I used method overloading and for each
+
+Ahat follows next is if-else 
+
+After that setTimeout function to remind from now
+
+setTimeout(TimingAlert, DurationT) is the time taken to execute after the start, as a particular time from now.
+
+Enjoy!
