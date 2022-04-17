@@ -87,6 +87,7 @@ class Task{
 
 if(Controller == 1){
 
+// do i < 6 to add 6 tasks, remember..array starts counting from 0
 
 for(let i = 0; i < 2; i++){
 
