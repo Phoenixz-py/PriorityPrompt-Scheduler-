@@ -10,7 +10,7 @@ import chalk from 'chalk'
 const mb = 'Enter ToDo Of The Day: ';
 const a = 'You Have Pending ToDo Today!!, Complete It ASAP ' ;
 const owo = 'Umm you sure u want to reach the end of the word? Ow<';
-const OwO = 'Imma Fkin Kill You'
+const OwO = '....'
 const lord = 'Enter the keyword to access feature my liege: ';
 const lorda = 'Enter the keyword to add task or tasks my liege: ';
 
